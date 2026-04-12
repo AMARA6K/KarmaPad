@@ -10,7 +10,6 @@
     chosen {
         zephyr,display = &oled;
         zmk,kscan = &kscan0;
-        zmk,underglow = &led_strip;
     };
 
     // 8 direct-wired keys (6 buttons + 2 encoder switches)
