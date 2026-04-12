@@ -19,6 +19,7 @@ config SPI
     default y
 
 config WS2812_STRIP
+    bool
     default y
 
 config LED_STRIP
@@ -40,9 +41,6 @@ config ZMK_IDLE_SLEEP_TIMEOUT
     default 900000
 
 config EC11
-    default y
-
-config EC11_TRIGGER_GLOBAL_THREAD
     default y
 
 endif
