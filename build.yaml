@@ -1,4 +1,4 @@
 # "If humans made it, I can do it too."
-   include:
+include:
      - board: nice_nano_v2
        shield: karmapad
