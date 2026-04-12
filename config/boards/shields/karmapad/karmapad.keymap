@@ -70,8 +70,8 @@
                 &trans
                 &trans
             >;
-            sensor-bindings = <&rgb_ug RGB_BRI RGB_BRD
-                               &rgb_ug RGB_HUI RGB_HUD>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN
+                               &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
