@@ -1,0 +1,6 @@
+if BOARD_KARMAPAD
+
+config BOARD
+    default "karmapad"
+
+endif # BOARD_KARMAPAD

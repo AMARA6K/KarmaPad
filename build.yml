@@ -1,0 +1,7 @@
+# KarmaPad CI build
+# "If humans made it, I can do it too."
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  build:
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
