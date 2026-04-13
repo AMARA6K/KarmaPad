@@ -1,6 +1,6 @@
 /*
  * KarmaPad — 6-key wireless macropad + 2 encoder switches
- * Shield for nice_nano_v2 (Pro Micro NRF52840)
+ * Shield for nice_nano (Pro Micro NRF52840)
  *
  * "If humans made it, I can do it too."
  *   — 1801 Collective / Karma Ecosystem
@@ -17,8 +17,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/rgb.h>
-#include <dt-bindings/zmk/ext_power.h>
 
 / {
     behaviors {
@@ -38,11 +36,11 @@
         // ========== LAYER 0: STREAM ==========
         stream_layer {
             display-name = "STREAM";
-            bindings = <
+            bindings = 
                 &kp F13         &kp F14         &kp F15
                 &kp F16         &kp F17         &kp F18
-                &enc_lt 1 LC(LS(LA(F19)))     // K7: tap=mic mute, hold=MEDIA
-                &enc_lt 2 LC(LS(LA(F20)))     // K8: tap=desk mute, hold=SETTINGS
+                &enc_lt 1 LC(LS(LA(F19)))
+                &enc_lt 2 LC(LS(LA(F20)))
             >;
             sensor-bindings = <&inc_dec_kp LC(LS(LA(F23))) LC(LS(LA(F24)))
                                &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -51,7 +49,7 @@
         // ========== LAYER 1: MEDIA ==========
         media_layer {
             display-name = "MEDIA";
-            bindings = <
+            bindings = 
                 &kp C_PREV      &kp C_PP        &kp C_NEXT
                 &kp C_MUTE      &kp C_STOP      &kp C_EJECT
                 &trans
@@ -64,9 +62,9 @@
         // ========== LAYER 2: SETTINGS ==========
         settings_layer {
             display-name = "SETTINGS";
-            bindings = <
+            bindings = 
                 &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2
-                &bt BT_CLR      &rgb_ug RGB_TOG &rgb_ug RGB_EFF
+                &bt BT_CLR      &none           &none
                 &trans
                 &trans
             >;
