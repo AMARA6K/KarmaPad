@@ -12,25 +12,6 @@ config I2C
 config SSD1306
     default y
 
-config ZMK_RGB_UNDERGLOW
-    default y
-
-config SPI
-    default y
-
-config WS2812_STRIP
-    bool
-    default y
-
-config LED_STRIP
-    default y
-
-config ZMK_RGB_UNDERGLOW_ON_START
-    default n
-
-config ZMK_RGB_UNDERGLOW_BRT_START
-    default 40
-
 config ZMK_BATTERY_REPORTING
     default y
 
