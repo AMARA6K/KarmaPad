@@ -33,11 +33,10 @@
     keymap {
         compatible = "zmk,keymap";
 
-        // ========== LAYER 0: STREAM ==========
         stream_layer {
             bindings = 
-                &kp F13         &kp F14         &kp F15
-                &kp F16         &kp F17         &kp F18
+                &kp F13 &kp F14 &kp F15
+                &kp F16 &kp F17 &kp F18
                 &enc_lt 1 LC(LS(LA(F19)))
                 &enc_lt 2 LC(LS(LA(F20)))
             >;
@@ -45,11 +44,10 @@
                                &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        // ========== LAYER 1: MEDIA ==========
         media_layer {
             bindings = 
-                &kp C_PREV      &kp C_PP        &kp C_NEXT
-                &kp C_MUTE      &kp C_STOP      &kp C_EJECT
+                &kp C_PREV &kp C_PP   &kp C_NEXT
+                &kp C_MUTE &kp C_STOP &kp C_EJECT
                 &trans
                 &trans
             >;
@@ -57,11 +55,10 @@
                                &inc_dec_kp C_BRI_UP C_BRI_DN>;
         };
 
-        // ========== LAYER 2: SETTINGS ==========
         settings_layer {
             bindings = 
-                &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2
-                &bt BT_CLR      &none           &none
+                &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2
+                &bt BT_CLR   &none        &none
                 &trans
                 &trans
             >;
